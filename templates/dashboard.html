@@ -1,0 +1,111 @@
+{% extends "base.html" %}
+{% block other_js %}
+    <script src="/static/js/jquery-3.5.1.min.js"></script>
+    <script src="/static/js/chart.js"></script>
+    <script src="/static/js/dashboard.js"></script>
+{% endblock %}
+{% block content %}
+<div class="dashboard">
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <div class="info-block stats-table">
+                    <div class="title">General Statistics</div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <div class="stat-icon">
+                                    <i class="fa fa-thermometer-three-quarters"></i>
+                                </div>
+                                <div class="stat">
+                                    <div id="room-temp" class="value">-°C</div>
+                                    <div class="name">Room</div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="stat-icon">
+                                    <i class="fa fa-thermometer-three-quarters"></i>
+                                </div>
+                                <div class="stat">
+                                    <div id="outside-temp" class="value">-°C</div>
+                                    <div class="name">Outside</div>
+                                </div>
+                            </div>
+                        </div><!-- row -->
+                        <div class="row">
+                            <div class="col">
+                                <div class="stat-icon">
+                                    <i class="fa fa-ravelry"></i>
+                                </div>
+                                <div class="stat">
+                                    <div id="incoming-temp" class="value">-°C</div>
+                                    <div class="name">Incoming Air</div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="stat-icon">
+                                    <i class="fa fa-ravelry"></i>
+                                </div>
+                                <div class="stat">
+                                    <div id="outgoing-temp" class="value">-°C</div>
+                                    <div class="name">Outgoing Air</div>
+                                </div>
+                            </div>
+                        </div><!-- row -->
+                        <div class="row">
+                            <div class="col">
+                                <div class="stat-icon">
+                                    <i class="fa fa-bolt"></i>
+                                </div>
+                                <div class="stat">
+                                    <div id="server-power" class="value">- W</div>
+                                    <div class="name">Servers</div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="stat-icon">
+                                    <i class="fa fa-bolt"></i>
+                                </div>
+                                <div class="stat">
+                                    <div id="cooling-power" class="value">- W</div>
+                                    <div class="name">Cooling</div>
+                                </div>
+                            </div>
+                        </div><!-- row -->
+                        <div class="row">
+                            <div class="col">
+                                <div class="stat-icon">
+                                    <i class="fa fa-sun-o"></i>
+                                </div>
+                                <div class="stat">
+                                    <div id="solar-power" class="value">- W</div>
+                                    <div class="name">Solar Panels</div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="stat-icon">
+                                    <i class="fa fa-free-code-camp"></i>
+                                </div>
+                                <div class="stat">
+                                    <div id="pue" class="value">-</div>
+                                    <div class="name">PUE</div>
+                                </div>
+                            </div>
+                        </div><!-- row -->
+                    </div><!-- container -->
+                </div><!-- info-block -->
+            </div><!-- col -->
+            <div class="col-6">
+                <div class="info-block">
+                    <div class="title">Energy Balance</div>
+                    <canvas id="energy-doughnut"></canvas>
+                </div><!-- info-block -->
+            </div><!-- col -->
+        </div><!-- row -->
+    </div><!-- container -->
+    <div class="line-block">
+        <div class="title">Energy balance (last 24h)</div>
+        <canvas id="energy-line"></canvas>
+    </div>
+</div><!-- dashboard -->
+{% endblock %}

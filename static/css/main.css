@@ -1,0 +1,91 @@
+/** Login forms **/
+.bg-login {
+    background: #343a40;
+}
+
+.form-login {
+    width: 400px;
+    padding: 20px;
+    text-align: center;
+    margin-top: 100px;
+    background: #fafafa;
+}
+
+.form-signup {
+    width: 600px;
+    padding: 20px;
+    margin-top: 100px;
+    background: #fafafa;
+    text-align: center;
+}
+
+.form-signup label {
+    text-align: left;
+}
+
+/*** dashboard ***/
+.dashboard {
+    font-family: 'FontAwesome';
+    color: #4f5f6f;
+}
+
+.dashboard .info-block {
+    width: 500px;
+    height: 535px;
+    padding: 10px;
+    margin: auto;
+    background: white;
+    text-align: center;
+}
+
+.dashboard .title {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.dashboard .info-block .stat-icon {
+    width: 50px;
+    height: 85px;
+    text-align: center;
+    font-size: 40px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.dashboard .stats-table .row {
+    height: 100px;
+}
+
+.dashboard .stats-table .title {
+    margin-bottom: 30px;
+}
+
+.dashboard .med-icon {
+    font-size: 40px;
+}
+
+.dashboard .small-icon {
+    font-size: 30px;
+}
+
+.dashboard .info-block .stat {
+    display: inline-block;
+}
+
+.dashboard .info-block .stat .value {
+    font-size: 20px;
+}
+
+.dashboard .info-block .stat .name {
+    font-size: 14px;
+}
+
+.dashboard .line-block {
+    width: 1068px;
+    margin: auto;
+    margin-top: 30px;
+    padding: 20px;
+    background: white;
+    text-align: center;
+}

@@ -1,0 +1,600 @@
+{
+    "time": 1633622840,
+    "values": [
+        {
+            "time": 1633622839,
+            "last_value": 0.0,
+            "name": "ecotype-10_pdu-Z1.50"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 0.0,
+            "name": "ecotype-10_pdu-Z1.51"
+        },
+        {
+            "time": 1633622839,
+            "last_value": 0.0,
+            "name": "ecotype-11_pdu-Z1.50"
+        },
+        {
+            "time": 1633622839,
+            "last_value": 0.0,
+            "name": "ecotype-11_pdu-Z1.51"
+        },
+        {
+            "time": 1633622839,
+            "last_value": 0.0,
+            "name": "ecotype-12_pdu-Z1.50"
+        },
+        {
+            "time": 1633622839,
+            "last_value": 0.0,
+            "name": "ecotype-12_pdu-Z1.51"
+        },
+        {
+            "time": 1633622839,
+            "last_value": 0.0,
+            "name": "ecotype-13_pdu-Z1.40"
+        },
+        {
+            "time": 1633622839,
+            "last_value": 0.0,
+            "name": "ecotype-13_pdu-Z1.41"
+        },
+        {
+            "time": 1633622839,
+            "last_value": 0.0,
+            "name": "ecotype-14_pdu-Z1.40"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 0.0,
+            "name": "ecotype-14_pdu-Z1.41"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 0.0,
+            "name": "ecotype-15_pdu-Z1.40"
+        },
+        {
+            "time": 1633622839,
+            "last_value": 0.0,
+            "name": "ecotype-15_pdu-Z1.41"
+        },
+        {
+            "time": 1633622839,
+            "last_value": 0.0,
+            "name": "ecotype-16_pdu-Z1.40"
+        },
+        {
+            "time": 1633622839,
+            "last_value": 0.0,
+            "name": "ecotype-16_pdu-Z1.41"
+        },
+        {
+            "time": 1633622839,
+            "last_value": 0.0,
+            "name": "ecotype-17_pdu-Z1.40"
+        },
+        {
+            "time": 1633622839,
+            "last_value": 0.0,
+            "name": "ecotype-17_pdu-Z1.41"
+        },
+        {
+            "time": 1633622839,
+            "last_value": 0.0,
+            "name": "ecotype-18_pdu-Z1.40"
+        },
+        {
+            "time": 1633622839,
+            "last_value": 19.0,
+            "name": "ecotype-18_pdu-Z1.41"
+        },
+        {
+            "time": 1633622839,
+            "last_value": 0.0,
+            "name": "ecotype-19_pdu-Z1.40"
+        },
+        {
+            "time": 1633622839,
+            "last_value": 0.0,
+            "name": "ecotype-19_pdu-Z1.41"
+        },
+        {
+            "time": 1633622839,
+            "last_value": 0.0,
+            "name": "ecotype-1_pdu-Z1.50"
+        },
+        {
+            "time": 1633622839,
+            "last_value": 0.0,
+            "name": "ecotype-1_pdu-Z1.51"
+        },
+        {
+            "time": 1633622839,
+            "last_value": 0.0,
+            "name": "ecotype-20_pdu-Z1.40"
+        },
+        {
+            "time": 1633622839,
+            "last_value": 0.0,
+            "name": "ecotype-20_pdu-Z1.41"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 0.0,
+            "name": "ecotype-21_pdu-Z1.40"
+        },
+        {
+            "time": 1633622839,
+            "last_value": 0.0,
+            "name": "ecotype-21_pdu-Z1.41"
+        },
+        {
+            "time": 1633622839,
+            "last_value": 0.0,
+            "name": "ecotype-22_pdu-Z1.40"
+        },
+        {
+            "time": 1633622839,
+            "last_value": 0.0,
+            "name": "ecotype-22_pdu-Z1.41"
+        },
+        {
+            "time": 1633622839,
+            "last_value": 0.0,
+            "name": "ecotype-23_pdu-Z1.40"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 0.0,
+            "name": "ecotype-23_pdu-Z1.41"
+        },
+        {
+            "time": 1633622839,
+            "last_value": 0.0,
+            "name": "ecotype-24_pdu-Z1.40"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 0.0,
+            "name": "ecotype-24_pdu-Z1.41"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 0.0,
+            "name": "ecotype-25_pdu-Z1.20"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 0.0,
+            "name": "ecotype-25_pdu-Z1.21"
+        },
+        {
+            "time": 1633622839,
+            "last_value": 0.0,
+            "name": "ecotype-26_pdu-Z1.20"
+        },
+        {
+            "time": 1633622839,
+            "last_value": 0.0,
+            "name": "ecotype-26_pdu-Z1.21"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 0.0,
+            "name": "ecotype-27_pdu-Z1.20"
+        },
+        {
+            "time": 1633622839,
+            "last_value": 0.0,
+            "name": "ecotype-27_pdu-Z1.21"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 0.0,
+            "name": "ecotype-28_pdu-Z1.20"
+        },
+        {
+            "time": 1633622839,
+            "last_value": 0.0,
+            "name": "ecotype-28_pdu-Z1.21"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 0.0,
+            "name": "ecotype-29_pdu-Z1.20"
+        },
+        {
+            "time": 1633622839,
+            "last_value": 0.0,
+            "name": "ecotype-29_pdu-Z1.21"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 0.0,
+            "name": "ecotype-2_pdu-Z1.50"
+        },
+        {
+            "time": 1633622839,
+            "last_value": 0.0,
+            "name": "ecotype-2_pdu-Z1.51"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 0.0,
+            "name": "ecotype-30_pdu-Z1.20"
+        },
+        {
+            "time": 1633622839,
+            "last_value": 0.0,
+            "name": "ecotype-30_pdu-Z1.21"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 0.0,
+            "name": "ecotype-31_pdu-Z1.20"
+        },
+        {
+            "time": 1633622839,
+            "last_value": 0.0,
+            "name": "ecotype-31_pdu-Z1.21"
+        },
+        {
+            "time": 1633622839,
+            "last_value": 0.0,
+            "name": "ecotype-32_pdu-Z1.20"
+        },
+        {
+            "time": 1633622839,
+            "last_value": 0.0,
+            "name": "ecotype-32_pdu-Z1.21"
+        },
+        {
+            "time": 1633622839,
+            "last_value": 0.0,
+            "name": "ecotype-33_pdu-Z1.20"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 0.0,
+            "name": "ecotype-33_pdu-Z1.21"
+        },
+        {
+            "time": 1633622839,
+            "last_value": 0.0,
+            "name": "ecotype-34_pdu-Z1.20"
+        },
+        {
+            "time": 1633622839,
+            "last_value": 0.0,
+            "name": "ecotype-34_pdu-Z1.21"
+        },
+        {
+            "time": 1633622839,
+            "last_value": 0.0,
+            "name": "ecotype-35_pdu-Z1.20"
+        },
+        {
+            "time": 1633622839,
+            "last_value": 0.0,
+            "name": "ecotype-35_pdu-Z1.21"
+        },
+        {
+            "time": 1633622839,
+            "last_value": 0.0,
+            "name": "ecotype-36_pdu-Z1.20"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 0.0,
+            "name": "ecotype-36_pdu-Z1.21"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 0.0,
+            "name": "ecotype-37_pdu-Z1.10"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 0.0,
+            "name": "ecotype-37_pdu-Z1.11"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 0.0,
+            "name": "ecotype-38_pdu-Z1.10"
+        },
+        {
+            "time": 1633622839,
+            "last_value": 0.0,
+            "name": "ecotype-38_pdu-Z1.11"
+        },
+        {
+            "time": 1633622839,
+            "last_value": 0.0,
+            "name": "ecotype-39_pdu-Z1.10"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 0.0,
+            "name": "ecotype-39_pdu-Z1.11"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 0.0,
+            "name": "ecotype-3_pdu-Z1.50"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 0.0,
+            "name": "ecotype-3_pdu-Z1.51"
+        },
+        {
+            "time": 1633622839,
+            "last_value": 0.0,
+            "name": "ecotype-40_pdu-Z1.10"
+        },
+        {
+            "time": 1633622839,
+            "last_value": 0.0,
+            "name": "ecotype-40_pdu-Z1.11"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 0.0,
+            "name": "ecotype-41_pdu-Z1.10"
+        },
+        {
+            "time": 1633622839,
+            "last_value": 0.0,
+            "name": "ecotype-41_pdu-Z1.11"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 0.0,
+            "name": "ecotype-42_pdu-Z1.10"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 0.0,
+            "name": "ecotype-42_pdu-Z1.11"
+        },
+        {
+            "time": 1633622839,
+            "last_value": 0.0,
+            "name": "ecotype-43_pdu-Z1.10"
+        },
+        {
+            "time": 1633622839,
+            "last_value": 0.0,
+            "name": "ecotype-43_pdu-Z1.11"
+        },
+        {
+            "time": 1633622839,
+            "last_value": 0.0,
+            "name": "ecotype-44_pdu-Z1.10"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 0.0,
+            "name": "ecotype-44_pdu-Z1.11"
+        },
+        {
+            "time": 1633622839,
+            "last_value": 0.0,
+            "name": "ecotype-45_pdu-Z1.10"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 0.0,
+            "name": "ecotype-45_pdu-Z1.11"
+        },
+        {
+            "time": 1633622839,
+            "last_value": 0.0,
+            "name": "ecotype-46_pdu-Z1.10"
+        },
+        {
+            "time": 1633622839,
+            "last_value": 0.0,
+            "name": "ecotype-46_pdu-Z1.11"
+        },
+        {
+            "time": 1633622839,
+            "last_value": 0.0,
+            "name": "ecotype-47_pdu-Z1.10"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 0.0,
+            "name": "ecotype-47_pdu-Z1.11"
+        },
+        {
+            "time": 1633622839,
+            "last_value": 0.0,
+            "name": "ecotype-48_pdu-Z1.10"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 0.0,
+            "name": "ecotype-48_pdu-Z1.11"
+        },
+        {
+            "time": 1633622839,
+            "last_value": 0.0,
+            "name": "ecotype-4_pdu-Z1.50"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 0.0,
+            "name": "ecotype-4_pdu-Z1.51"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 0.0,
+            "name": "ecotype-5_pdu-Z1.50"
+        },
+        {
+            "time": 1633622839,
+            "last_value": 0.0,
+            "name": "ecotype-5_pdu-Z1.51"
+        },
+        {
+            "time": 1633622839,
+            "last_value": 0.0,
+            "name": "ecotype-6_pdu-Z1.50"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 0.0,
+            "name": "ecotype-6_pdu-Z1.51"
+        },
+        {
+            "time": 1633622839,
+            "last_value": 0.0,
+            "name": "ecotype-7_pdu-Z1.50"
+        },
+        {
+            "time": 1633622839,
+            "last_value": 0.0,
+            "name": "ecotype-7_pdu-Z1.51"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 0.0,
+            "name": "ecotype-8_pdu-Z1.50"
+        },
+        {
+            "time": 1633622839,
+            "last_value": 0.0,
+            "name": "ecotype-8_pdu-Z1.51"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 0.0,
+            "name": "ecotype-9_pdu-Z1.50"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 0.0,
+            "name": "ecotype-9_pdu-Z1.51"
+        },
+        {
+            "time": 1633622819,
+            "last_value": 262.0,
+            "name": "polycristallin_plat_0_ond10"
+        },
+        {
+            "time": 1633622819,
+            "last_value": 250.0,
+            "name": "polycristallin_plat_0_ond11"
+        },
+        {
+            "time": 1633622819,
+            "last_value": 254.0,
+            "name": "polycristallin_plat_0_ond12"
+        },
+        {
+            "time": 1633622820,
+            "last_value": 1423.0,
+            "name": "tracker_solaire_ond13"
+        },
+        {
+            "time": 1633622800,
+            "last_value": 701.0,
+            "name": "tracker_solaire_ond14"
+        },
+        {
+            "time": 1633622820,
+            "last_value": 87.0,
+            "name": "polycristallin_est_5_ond1"
+        },
+        {
+            "time": 1633622820,
+            "last_value": 175.0,
+            "name": "polycristallin_est_5_ond2"
+        },
+        {
+            "time": 1633622798,
+            "last_value": 334.0,
+            "name": "monocristallin_ouest_5_ond3"
+        },
+        {
+            "time": 1633622818,
+            "last_value": 374.0,
+            "name": "monocristallin_ouest_5_ond4"
+        },
+        {
+            "time": 1633622819,
+            "last_value": 507.0,
+            "name": "monocristallin_sud_30_ond5"
+        },
+        {
+            "time": 1633622819,
+            "last_value": 593.0,
+            "name": "monocristallin_sud_30_ond6"
+        },
+        {
+            "time": 1633622819,
+            "last_value": 472.0,
+            "name": "polycristallin_sud_30_ond7"
+        },
+        {
+            "time": 1633622820,
+            "last_value": 475.0,
+            "name": "polycristallin_sud_30_ond8"
+        },
+        {
+            "time": 1633622819,
+            "last_value": 268.0,
+            "name": "polycristallin_plat_0_ond9"
+        },
+        {
+            "time": 1633622839,
+            "last_value": 54.0,
+            "name": "switch_mgmt_pdu-Z1.40"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 112.0,
+            "name": "switch_prod_1_pdu-Z1.51"
+        },
+        {
+            "time": 1633622839,
+            "last_value": 88.0,
+            "name": "switch_prod_2_pdu-Z1.21"
+        },
+        {
+            "time": 1633622837,
+            "last_value": 0.0,
+            "name": "watt_cooler_b232_2"
+        },
+        {
+            "time": 1633622839,
+            "last_value": 63.0,
+            "name": "watt_cooler_ext_1"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 0.0,
+            "name": "watt_cooler_ext_2"
+        },
+        {
+            "time": 1633622839,
+            "last_value": 4.0,
+            "name": "wattmeter_condensator"
+        },
+        {
+            "time": 1633622839,
+            "last_value": 0.0,
+            "name": "wattmeter_cooling"
+        },
+        {
+            "time": 1633622839,
+            "last_value": 10.0,
+            "name": "wattmeter_servers"
+        }
+    ]
+}

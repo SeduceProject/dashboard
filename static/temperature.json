@@ -1,0 +1,650 @@
+{
+    "time": 1633622840,
+    "values": [
+        {
+            "time": 1633622839,
+            "last_value": 20.0,
+            "name": "room-top"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 30.15,
+            "name": "ecotype-29-back"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 28.04,
+            "name": "ecotype-11-back"
+        },
+        {
+            "time": 1633622837,
+            "last_value": 20.27,
+            "name": "temp-15-front"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 27.17,
+            "name": "ecotype-12-back"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 28.0,
+            "name": "ecotype-14-back"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 30.04,
+            "name": "ecotype-25-back"
+        },
+        {
+            "time": 1633622839,
+            "last_value": 24.46,
+            "name": "ecotype-44-back"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 20.31,
+            "name": "ecotype-26-front"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 20.39,
+            "name": "temp-4-front"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 19.01,
+            "name": "temp-8-back"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 25.47,
+            "name": "ecotype-10-back"
+        },
+        {
+            "time": 1633622837,
+            "last_value": 26.97,
+            "name": "ecotype-47-back"
+        },
+        {
+            "time": 1633622837,
+            "last_value": 19.78,
+            "name": "ecotype-38-front"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 24.71,
+            "name": "ecotype-27-back"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 19.69,
+            "name": "ecotype-8-front"
+        },
+        {
+            "time": 1633622837,
+            "last_value": 21.1,
+            "name": "ecotype-43-front"
+        },
+        {
+            "time": 1633622837,
+            "last_value": 20.03,
+            "name": "ecotype-14-front"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 24.77,
+            "name": "ecotype-9-back"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 28.65,
+            "name": "ecotype-32-back"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 25.56,
+            "name": "ecotype-13-back"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 25.33,
+            "name": "ecotype-30-back"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 29.33,
+            "name": "ecotype-26-back"
+        },
+        {
+            "time": 1633622839,
+            "last_value": 29.37,
+            "name": "ecotype-40-back"
+        },
+        {
+            "time": 1633622839,
+            "last_value": 16.86,
+            "name": "temp-16-back"
+        },
+        {
+            "time": 1633622837,
+            "last_value": 19.81,
+            "name": "ecotype-13-front"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 30.74,
+            "name": "ecotype-20-back"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 19.75,
+            "name": "ecotype-32-front"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 23.79,
+            "name": "temp-5-back"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 22.04,
+            "name": "temp-9-front"
+        },
+        {
+            "time": 1633622837,
+            "last_value": 19.96,
+            "name": "ecotype-39-front"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 19.72,
+            "name": "ecotype-9-front"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 19.79,
+            "name": "temp-10-front"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 19.77,
+            "name": "ecotype-25-front"
+        },
+        {
+            "time": 1633622837,
+            "last_value": 20.47,
+            "name": "ecotype-20-front"
+        },
+        {
+            "time": 1633622837,
+            "last_value": 20.4,
+            "name": "ecotype-37-front"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 23.5,
+            "name": "ecotype-5-back"
+        },
+        {
+            "time": 1633622837,
+            "last_value": 20.7,
+            "name": "ecotype-47-front"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 18.12,
+            "name": "temp-7-back"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 29.4,
+            "name": "ecotype-16-back"
+        },
+        {
+            "time": 1633622839,
+            "last_value": 22.21,
+            "name": "ecotype-46-back"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 24.15,
+            "name": "ecotype-8-back"
+        },
+        {
+            "time": 1633622837,
+            "last_value": 26.64,
+            "name": "ecotype-42-back"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 27.52,
+            "name": "ecotype-18-back"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 19.19,
+            "name": "temp-3-back"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 23.16,
+            "name": "ecotype-31-back"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 20.0,
+            "name": "ecotype-11-front"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 19.59,
+            "name": "ecotype-5-front"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 21.87,
+            "name": "ecotype-36-front"
+        },
+        {
+            "time": 1633622836,
+            "last_value": 18.72,
+            "name": "temp-2-front"
+        },
+        {
+            "time": 1633622839,
+            "last_value": 22.63,
+            "name": "ecotype-45-back"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 22.82,
+            "name": "temp-9-back"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 18.49,
+            "name": "temp-11-front"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 26.29,
+            "name": "ecotype-34-back"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 20.07,
+            "name": "ecotype-4-front"
+        },
+        {
+            "time": 1633622837,
+            "last_value": 20.95,
+            "name": "temp-8-front"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 22.02,
+            "name": "temp-6-back"
+        },
+        {
+            "time": 1633622839,
+            "last_value": 33.46,
+            "name": "ecotype-38-back"
+        },
+        {
+            "time": 1633622837,
+            "last_value": 21.52,
+            "name": "ecotype-24-front"
+        },
+        {
+            "time": 1633622837,
+            "last_value": 18.9,
+            "name": "temp-15-back"
+        },
+        {
+            "time": 1633622839,
+            "last_value": 25.19,
+            "name": "ecotype-48-back"
+        },
+        {
+            "time": 1633622837,
+            "last_value": 20.85,
+            "name": "ecotype-48-front"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 28.68,
+            "name": "ecotype-28-back"
+        },
+        {
+            "time": 1633622837,
+            "last_value": 20.31,
+            "name": "ecotype-19-front"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 21.8,
+            "name": "ecotype-27-front"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 27.66,
+            "name": "ecotype-15-back"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 28.17,
+            "name": "ecotype-19-back"
+        },
+        {
+            "time": 1633622836,
+            "last_value": 21.22,
+            "name": "ecotype-4-back"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 18.88,
+            "name": "temp-10-back"
+        },
+        {
+            "time": 1633622837,
+            "last_value": 20.91,
+            "name": "ecotype-23-front"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 22.51,
+            "name": "ecotype-24-back"
+        },
+        {
+            "time": 1633622837,
+            "last_value": 20.22,
+            "name": "ecotype-21-front"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 25.5,
+            "name": "ecotype-2-back"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 18.72,
+            "name": "ecotype-30-front"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 22.81,
+            "name": "ecotype-7-back"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 23.04,
+            "name": "ecotype-6-back"
+        },
+        {
+            "time": 1633622837,
+            "last_value": 20.41,
+            "name": "temp-7-front"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 19.34,
+            "name": "ecotype-7-front"
+        },
+        {
+            "time": 1633622839,
+            "last_value": 25.76,
+            "name": "ecotype-37-back"
+        },
+        {
+            "time": 1633622839,
+            "last_value": 8.96,
+            "name": "temp-14-back"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 27.36,
+            "name": "ecotype-1-back"
+        },
+        {
+            "time": 1633622837,
+            "last_value": 18.88,
+            "name": "ecotype-42-front"
+        },
+        {
+            "time": 1633622837,
+            "last_value": 19.54,
+            "name": "ecotype-18-front"
+        },
+        {
+            "time": 1633622837,
+            "last_value": 20.5,
+            "name": "ecotype-45-front"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 18.62,
+            "name": "temp-1-front"
+        },
+        {
+            "time": 1633622837,
+            "last_value": 19.96,
+            "name": "temp-14-front"
+        },
+        {
+            "time": 1633622837,
+            "last_value": 19.97,
+            "name": "ecotype-17-front"
+        },
+        {
+            "time": 1633622837,
+            "last_value": 21.25,
+            "name": "temp-13-front"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 24.54,
+            "name": "ecotype-23-back"
+        },
+        {
+            "time": 1633622839,
+            "last_value": 22.8,
+            "name": "ecotype-39-back"
+        },
+        {
+            "time": 1633622837,
+            "last_value": 21.17,
+            "name": "ecotype-44-front"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 24.43,
+            "name": "ecotype-36-back"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 20.22,
+            "name": "ecotype-33-front"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 19.09,
+            "name": "temp-4-back"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 19.81,
+            "name": "ecotype-10-front"
+        },
+        {
+            "time": 1633622837,
+            "last_value": 18.77,
+            "name": "ecotype-41-front"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 25.09,
+            "name": "ecotype-3-back"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 19.84,
+            "name": "ecotype-1-front"
+        },
+        {
+            "time": 1633622837,
+            "last_value": 19.89,
+            "name": "temp-5-front"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 18.81,
+            "name": "ecotype-29-front"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 27.68,
+            "name": "ecotype-17-back"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 32.9,
+            "name": "ecotype-33-back"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 21.74,
+            "name": "temp-2-back"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 19.39,
+            "name": "ecotype-31-front"
+        },
+        {
+            "time": 1633622837,
+            "last_value": 20.53,
+            "name": "ecotype-46-front"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 21.43,
+            "name": "ecotype-35-front"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 22.94,
+            "name": "ecotype-35-back"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 20.04,
+            "name": "ecotype-12-front"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 19.32,
+            "name": "ecotype-2-front"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 21.46,
+            "name": "temp-1-back"
+        },
+        {
+            "time": 1633622837,
+            "last_value": 19.95,
+            "name": "ecotype-40-front"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 26.78,
+            "name": "ecotype-21-back"
+        },
+        {
+            "time": 1633622837,
+            "last_value": 19.98,
+            "name": "ecotype-15-front"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 19.7,
+            "name": "temp-3-front"
+        },
+        {
+            "time": 1633622837,
+            "last_value": 19.85,
+            "name": "ecotype-16-front"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 29.34,
+            "name": "ecotype-22-back"
+        },
+        {
+            "time": 1633622839,
+            "last_value": 20.98,
+            "name": "temp-13-back"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 19.71,
+            "name": "temp-12-back"
+        },
+        {
+            "time": 1633622837,
+            "last_value": 24.32,
+            "name": "ecotype-41-back"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 19.49,
+            "name": "temp-12-front"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 21.27,
+            "name": "ecotype-34-front"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 21.92,
+            "name": "ecotype-28-front"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 19.41,
+            "name": "ecotype-3-front"
+        },
+        {
+            "time": 1633622837,
+            "last_value": 20.62,
+            "name": "ecotype-22-front"
+        },
+        {
+            "time": 1633622837,
+            "last_value": 20.54,
+            "name": "temp-16-front"
+        },
+        {
+            "time": 1633622838,
+            "last_value": 19.15,
+            "name": "temp-11-back"
+        },
+        {
+            "time": 1633622837,
+            "last_value": 19.31,
+            "name": "temp-6-front"
+        },
+        {
+            "time": 1633622839,
+            "last_value": 21.11,
+            "name": "ecotype-43-back"
+        },
+        {
+            "time": 1633622820,
+            "last_value": 20.200000762939453,
+            "name": "outside"
+        }
+    ]
+}
