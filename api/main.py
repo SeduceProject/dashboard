@@ -4,6 +4,7 @@ import flask
 
 b_main = flask.Blueprint("user", __name__, template_folder="templates/")
 
+
 # JSON files
 @b_main.route("/json/temperature")
 def temperature_file():
@@ -58,11 +59,4 @@ def consumption():
 @b_main.route("/production")
 def production():
     return flask.render_template("production.html", active_btn = "production",
-        is_anonymous = current_user.is_anonymous)
-
-
-@b_main.route("/user")
-@login_required
-def user():
-    return flask.render_template("user.html", active_btn = "user",
         is_anonymous = current_user.is_anonymous)

@@ -27,6 +27,7 @@ body {
     font-family: 'FontAwesome';
     color: #4f5f6f;
 }
+
 /*** dashboard ***/
 .dashboard .info-block {
     width: 500px;
@@ -171,7 +172,7 @@ body {
 }
 
 .production .line-block {
-    width: 1068px;
+    width: 1108px;
     margin: auto;
     margin-top: 30px;
     padding: 20px;
@@ -202,4 +203,31 @@ body {
 .production .field-value {
     margin-left: 10px;
     display: inline-block;
+}
+
+/** users page ***/
+.users {
+    width: 1000px;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    background: white;
+}
+
+.users h4 {
+    margin-top: 30px;
+}
+
+.users .row {
+    margin-top: 10px;
+}
+
+.users .btn {
+    margin: auto;
+    margin-top: 10px;
+}
+
+.users select {
+    width: 325px;
+    height: 30px;
 }

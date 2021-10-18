@@ -3,6 +3,7 @@ from database.tables import User
 from datetime import datetime
 from flask import Flask, render_template
 from flask_login import LoginManager, UserMixin
+from api.admin import b_admin
 from api.login import b_login
 from api.main import b_main
 import jinja2, logging, os, sys
@@ -14,6 +15,7 @@ dashboard.secret_key = "dashboard secret key"
 # Add routes from blueprints
 dashboard.register_blueprint(b_login)
 dashboard.register_blueprint(b_main)
+dashboard.register_blueprint(b_admin)
 
 
 # Jinja filters to render templates
