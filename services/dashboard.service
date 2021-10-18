@@ -1,0 +1,13 @@
+[Unit]
+Description=Dashboard
+ 
+[Service]
+Type=simple
+User=root
+Group=root
+WorkingDirectory=/root/dashboard
+ExecStart=/usr/bin/python3 dashboard.py 
+Restart=on-failure
+ 
+[Install]
+WantedBy=multi-user.target

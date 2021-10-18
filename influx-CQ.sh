@@ -6,3 +6,9 @@ influx -database $DB_NAME -execute "CREATE CONTINUOUS QUERY power_mean_5m_cq ON 
   WHERE unit = 'W' \
   GROUP BY sensor, time(5m) \
 END"
+
+influx -database $DB_NAME -execute "CREATE CONTINUOUS QUERY power_mean_15m_cq ON $DB_NAME BEGIN \
+  SELECT MEAN(value) INTO power_mean_15m FROM sensors \
+  WHERE unit = 'W' \
+  GROUP BY sensor, time(15m) \
+END"

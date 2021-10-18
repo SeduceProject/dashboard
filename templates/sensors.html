@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block other_js %}
+    <script src="/static/js/jquery-3.5.1.min.js"></script>
+    <script src="/static/js/sensors.js"></script>
+{% endblock %}
+{% block content %}
+<div class="sensors">
+    <div id="top" class="top-menu">
+        <a href="#server-cons">Server Consumption</a>
+        <a href="#switch-cons">Switch Consumption</a>
+        <a href="#cooling-cons">Cooling System Consumption</a>
+        <a href="#solar-prod">Solar Production</a>
+    </div>
+    <center><h4>Server Consumptions</h4></center>
+    <div id="server-cons" class="container text-center"></div>
+    <center><a href="#top" class="top-link">Top of the Page</a></center>
+    <center><h4>Switch Consumptions</h4></center>
+    <div id="switch-cons" class="container text-center"></div>
+    <center><a href="#top" class="top-link">Top of the Page</a></center>
+    <center><h4>Cooling Element Consumptions</h4></center>
+    <div id="cooling-cons" class="container text-center"></div>
+    <center><a href="#top" class="top-link">Top of the Page</a></center>
+    <center><h4>Solar Panel Productions</h4></center>
+    <div id="solar-prod" class="container text-center"></div>
+    <center><a href="#top" class="top-link">Top of the Page</a></center>
+</div><!-- sensors -->
+{% endblock %}

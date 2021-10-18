@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block other_js %}
+    <script src="/static/js/jquery-3.5.1.min.js"></script>
+    <script src="/static/js/rack-temperatures.js"></script>
+{% endblock %}
+{% block content %}
+<div class="temperatures">
+    <center><h4>Rack Front Temperatures</h4></center>
+    <div id="front" class="container text-center">
+    </div><!-- container -->
+    <center><h4>Rack Back Temperatures</h4></center>
+    <div id="back" class="container text-center">
+    </div><!-- container -->
+</div><!-- temperatures -->
+{% endblock %}

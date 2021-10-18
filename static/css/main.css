@@ -23,12 +23,11 @@
     text-align: left;
 }
 
-/*** dashboard ***/
-.dashboard {
+body {
     font-family: 'FontAwesome';
     color: #4f5f6f;
 }
-
+/*** dashboard ***/
 .dashboard .info-block {
     width: 500px;
     height: 535px;
@@ -82,10 +81,125 @@
 }
 
 .dashboard .line-block {
+    width: 1108px;
+    margin: auto;
+    margin-top: 30px;
+    padding: 20px;
+    background: white;
+    text-align: center;
+}
+
+/*** Sensors ***/
+.sensors {
+    width: 1000px;
+    margin: auto;
+    padding-bottom: 40px;
+    background: white;
+}
+
+.sensors .top-menu {
+    padding-top: 20px;
+}
+
+.sensors .top-menu a {
+    margin-left: 57px;
+}
+
+.sensors h4 {
+    margin-top: 30px;
+}
+
+.sensors .header {
+    font-weight: bold;
+}
+
+.sensors .in {
+    color: blue;
+}
+
+.sensors .out {
+    color: red;
+}
+
+.sensors .top-link {
+    margin: auto;
+}
+
+/*** Rack Temperatures ***/
+.temperatures {
+    width: 1000px;
+    padding: 20px;
+    margin: auto;
+    background: white;
+}
+
+.temperatures h4 {
+    margin-top: 40px;
+}
+
+/*** Power Consumption ***/
+.consumption .col-6 {
+    margin-top: 30px;
+}
+
+.consumption .chart-frame {
+    width: 540px;
+    height: 600px;
+    padding: 10px;
+    background: white;
+}
+
+.consumption .chart-frame div {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.consumption .msg {
+    margin-top: 240px;
+}
+
+/*** Solar Production ***/
+.production .row {
+    margin-top: 30px;
+}
+
+.production .chart-frame {
+    width: 540px;
+    height: 600px;
+    padding: 10px;
+    background: white;
+}
+
+.production .line-block {
     width: 1068px;
     margin: auto;
     margin-top: 30px;
     padding: 20px;
     background: white;
     text-align: center;
+}
+
+.production .title {
+    margin-bottom: 26px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.production .field {
+    margin-left: 14px;
+    text-align: left;
+}
+
+.production .field-icon {
+    width: 50px;
+    height: 74px;
+    text-align: center;
+    font-size: 30px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.production .field-value {
+    margin-left: 10px;
+    display: inline-block;
 }

@@ -1,0 +1,13 @@
+[Unit]
+Description=Dashboard Updater
+ 
+[Service]
+Type=simple
+User=root
+Group=root
+WorkingDirectory=/root/dashboard
+ExecStart=/usr/bin/python3 updater.py 
+Restart=on-failure
+ 
+[Install]
+WantedBy=multi-user.target

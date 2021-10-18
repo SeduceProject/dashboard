@@ -11,17 +11,15 @@ $(document).ready(function () {
 	  labels: [
 		'Servers',
 		'Cooling',
-		'Solar',
-		'EDF'
+		'Solar'
 	  ],
 	  datasets: [{
 		label: 'Energy Balance',
-		data: [0, 0, 0, 0],
+		data: [0, 0, 0],
 		backgroundColor: [
 		  'rgb(255, 99, 132)',
 		  'rgb(198, 248, 255)',
-		  'rgb(255, 205, 86)',
-          'rgb(54, 162, 235)'
+		  'rgb(255, 205, 86)'
 		],
 		hoverOffset: 4
 	  }]
@@ -31,7 +29,7 @@ $(document).ready(function () {
         type: 'doughnut',
         data: doughnutData
     });
-    $.getJSON('/static/power_day.json', function(data) {
+    $.getJSON('/json/power_day', function(data) {
         // Graph
         let xValues = [], prodData = [], consData = [];
         for (value in data["values"]) {
@@ -63,6 +61,11 @@ $(document).ready(function () {
         });
     });
     updateData(doughnutChart);
+    // Update the 'Genaral Statistics' and the 'Energy Balance' every 10s.
+    // NOTE: The 'Energy Balance (last 24h) is not updated.
+    setInterval(function() {
+        updateData(doughnutChart);
+    }, 10000);
 });
 
 function int2digit(number) {
@@ -77,13 +80,12 @@ function timestamp2string(ts) {
 }
 
 function updateData(dChart) {
-    $.getJSON('/static/temperature.json', function(data) {         
+    $.getJSON('/json/temperature', function(data) {         
         if(data.time != temperatureTS) {
             temperatureTS = data.time;
             let roomTemp = 0, outsideTemp = 0, incomingTemp = 0, outgoingTemp = 0;
             // Counters to compute the average
             let incomingNb = 0, outgoingNb = 0;
-            console.log(data);
             for (d of data.values) {
                 if(d.name.startsWith("ecotype")) {
                     if(d.name.endsWith("back")) {
@@ -100,22 +102,23 @@ function updateData(dChart) {
                 }
             }
             $("#room-temp").html(roomTemp.toFixed(1) + "°C");
-            $("#outside-temp").html(outsideTemp.toFixed(1) + "°C");
+            if(outsideTemp != 0) {
+                $("#outside-temp").html(outsideTemp.toFixed(1) + "°C");
+            } else {
+                console.log("outside temperature is missing");
+            }
             $("#incoming-temp").html((incomingTemp / incomingNb).toFixed(1) + "°C");
             $("#outgoing-temp").html((outgoingTemp / outgoingNb).toFixed(1) + "°C");
         }
     });
-    $.getJSON('/static/power.json', function(data) {         
+    $.getJSON('/json/power', function(data) {         
         if(data.time != powerTS) {
             powerTS = data.time;
             let serverPower = 0, coolingPower = 0, solarPower = 0;
-            console.log(data);
             for (d of data.values) {
                 if(d.name.startsWith("ecotype") || d.name.startsWith("switch")) {
                     serverPower += d.last_value;
                 } else if (d.name.startsWith("watt")) {
-                    console.log(d.name);
-                    console.log(d.last_value);
                     coolingPower += d.last_value;
                 } else if (d.name.startsWith("poly") || 
                     d.name.startsWith("mono") || 
