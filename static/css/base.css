@@ -27,7 +27,11 @@ body {
     display: block;
 }
 
-.sidenav a:last-child {
+.sidenav .sign-in {
+    background: #20a300;
+}
+
+.sidenav .sign-out {
     background: #d50000;
 }
 

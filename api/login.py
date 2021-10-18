@@ -8,11 +8,6 @@ import flask, logging
 b_login = flask.Blueprint("login", __name__, template_folder="templates/")
 
 
-@b_login.route("/")
-def root():
-    return flask.redirect("/login")
-
-
 @b_login.route("/login")
 def login():
     if current_user.is_authenticated:
@@ -30,7 +25,7 @@ def login_post():
     if len(form_data["email"]) > 0 and len(form_data["pwd"]) > 0:
         db = open_session()
         user = db.query(User).filter_by(email = form_data["email"]).first()
-        if user is not None and user.is_authorized:
+        if user is not None:
             if check_password_hash(user.password, form_data["pwd"]):
                 authenticated = True
                 login_user(user, remember=True)
@@ -51,4 +46,4 @@ def login_post():
 @login_required
 def logout():
     logout_user()
-    return flask.redirect("/login?msg=You are logged off")
+    return flask.redirect("/dashboard")

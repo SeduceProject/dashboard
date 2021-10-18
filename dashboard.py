@@ -37,10 +37,9 @@ def load_user(user_email):
     db = open_session()
     db_user = db.query(User).filter(User.email == user_email).first()
     auth_user = None
-    if db_user is not None and db_user.is_authorized:
+    if db_user is not None:
         flask_user = LoginUser()
         flask_user.email = db_user.email
-        flask_user.is_admin = db_user.is_admin
         auth_user = flask_user
     close_session(db)
     return auth_user

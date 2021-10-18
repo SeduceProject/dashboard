@@ -12,8 +12,6 @@ if create_tables():
     admin.email = "admin@seduce.fr"
     admin.password = \
         "sha256$kFAl3lBK$d48c4bd2ff12742351b219af6c4aff6d4cb9893b9b6146f6ea8d8a06c7a9a436"
-    admin.is_authorized = True
-    admin.is_admin = True
     db.add(admin)
     close_session(db)
 else:

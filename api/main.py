@@ -26,31 +26,43 @@ def production_file():
 
 
 # HTML Pages
+@b_main.route("/")
+def root():
+    return flask.redirect("/dashboard")
+
+
 @b_main.route("/dashboard")
-@login_required
 def dashboard():
-    return flask.render_template("dashboard.html", active_btn = "dashboard", admin = current_user.is_admin)
+    return flask.render_template("dashboard.html", active_btn = "dashboard",
+        is_anonymous = current_user.is_anonymous)
 
 
 @b_main.route("/sensors")
-@login_required
 def sensors():
-    return flask.render_template("sensors.html", active_btn = "sensors", admin = current_user.is_admin)
+    return flask.render_template("sensors.html", active_btn = "sensors",
+        is_anonymous = current_user.is_anonymous)
 
 
 @b_main.route("/temperatures")
-@login_required
 def temperatures():
-    return flask.render_template("rack_temperatures.html", active_btn = "temperatures", admin = current_user.is_admin)
+    return flask.render_template("rack_temperatures.html", active_btn = "temperatures",
+        is_anonymous = current_user.is_anonymous)
 
 
 @b_main.route("/consumption")
-@login_required
 def consumption():
-    return flask.render_template("consumption.html", active_btn = "consumption", admin = current_user.is_admin)
+    return flask.render_template("consumption.html", active_btn = "consumption",
+        is_anonymous = current_user.is_anonymous)
 
 
 @b_main.route("/production")
-@login_required
 def production():
-    return flask.render_template("production.html", active_btn = "production", admin = current_user.is_admin)
+    return flask.render_template("production.html", active_btn = "production",
+        is_anonymous = current_user.is_anonymous)
+
+
+@b_main.route("/user")
+@login_required
+def user():
+    return flask.render_template("user.html", active_btn = "user",
+        is_anonymous = current_user.is_anonymous)

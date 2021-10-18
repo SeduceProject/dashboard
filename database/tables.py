@@ -7,8 +7,6 @@ class User(Base):
     __tablename__ = "user"
     email = Column(Text, primary_key=True)
     password = Column(String)
-    is_authorized = Column(Boolean, default=False)
-    is_admin = Column(Boolean, default=False)
 
 
     def is_active(self):
