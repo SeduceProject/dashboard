@@ -55,3 +55,33 @@ def del_admin():
             db.delete(existing)
     close_session(db)
     return flask.redirect("/users")
+
+
+@b_admin.route("/password")
+@login_required
+def password():
+    return flask.render_template("password.html", active_btn = "password",
+        is_anonymous = current_user.is_anonymous)
+
+
+@b_admin.route("/update-pwd", methods=[ "POST" ])
+@login_required
+def update_pwd():
+    updated = False
+    form_data = flask.request.form
+    db = open_session()
+    existing = db.query(User).filter(User.email == current_user.email).first()
+    if existing is None:
+        logging.error("Administrator '%s' does not exist" % current_user.email)
+    else:
+        if form_data["pwd"] == form_data["confirm_pwd"]:
+            existing.password = generate_password_hash(form_data["pwd"], method = 'sha256')
+            logging.info("Password for '%s' updated" % current_user.email)
+            updated = True
+        else:
+            logging.error("Can not update the password: password and confirm password are different")
+    close_session(db)
+    if updated:
+        return flask.redirect("/dashboard")
+    else:
+        return flask.redirect("/password")

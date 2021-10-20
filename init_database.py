@@ -10,8 +10,9 @@ if create_tables():
     db = open_session()
     admin = User()
     admin.email = "admin@seduce.fr"
+    # Default admin password: seduceadmin (please, change the password at the first login)
     admin.password = \
-        "sha256$kFAl3lBK$d48c4bd2ff12742351b219af6c4aff6d4cb9893b9b6146f6ea8d8a06c7a9a436"
+        "sha256$tfuUzjjN$86f64e27bd56bb25b606f3d4d595c0c837ee93648e3884d32c618d329025e5f3"
     db.add(admin)
     close_session(db)
 else:
