@@ -66,7 +66,8 @@ $(document).ready(function () {
         }
         if(found) {
             let sDate = new Date(data[nameAM][idx].time * 1000);
-            $("#yesterday-start").html(sDate.getHours() + ":" + sDate.getMinutes());
+            $("#yesterday-start").html(int2digit(sDate.getHours()) + ":" +
+                int2digit(sDate.getMinutes()));
         }
         // Looking for the first consumption of yesterday afternoon equal to 0
         found = false;
@@ -89,7 +90,8 @@ $(document).ready(function () {
         }
         if(found) {
             let eDate = new Date(data[namePM][idx].time * 1000);
-            $("#yesterday-end").html(eDate.getHours() + ":" + eDate.getMinutes());
+            $("#yesterday-end").html(int2digit(eDate.getHours()) + ":" +
+                int2digit(eDate.getMinutes()));
         }
         // Compute the production hours of today
         // Looking for the first consumption of today greater than 0
@@ -113,7 +115,8 @@ $(document).ready(function () {
         }
         if(found) {
             let sDate = new Date(data[nameAM][idx].time * 1000);
-            $("#today-start").html(sDate.getHours() + ":" + sDate.getMinutes());
+            $("#today-start").html(int2digit(sDate.getHours()) + ":" +
+                int2digit(sDate.getMinutes()));
         }
 
         // Compute the 'Total Production', the 'Maximum Production' and 'Production Details (kW)'
@@ -172,10 +175,12 @@ $(document).ready(function () {
         }
         if(todayMax < 10000) {
             $("#today-max").html(todayMax.toFixed(0) + " W at " + 
-                todayDate.getHours() + ":" + todayDate.getMinutes());
+                int2digit(todayDate.getHours()) + ":" +
+                int2digit(todayDate.getMinutes()));
         } else {
             $("#today-max").html((todayMax / 1000).toFixed(0) + " kW at " +
-                todayDate.getHours() + ":" + todayDate.getMinutes());
+                int2digit(todayDate.getHours()) + ":" +
+                int2digit(todayDate.getMinutes()));
         }
         // Display the total and max values of yesterday
         if(yesterdayTotal < 10000) {
@@ -185,10 +190,10 @@ $(document).ready(function () {
         }
         if(yesterdayMax < 10000) {
             $("#yesterday-max").html(yesterdayMax.toFixed(0) + " W at " + 
-                yestedayDate.getHours() + ":" + yestedayDate.getMinutes());
+                int2digit(yestedayDate.getHours()) + ":" + int2digit(yestedayDate.getMinutes()));
         } else {
             $("#yesterday-max").html((yesterdayMax / 1000).toFixed(0) + " kW at " +
-                yestedayDate.getHours() + ":" + yestedayDate.getMinutes());
+                int2digit(yestedayDate.getHours()) + ":" + int2digit(yestedayDate.getMinutes()));
         }
         // Display the today doughnut
         const todayData = {
@@ -209,7 +214,6 @@ $(document).ready(function () {
               "tracker_solaire_ond14"
           ],
           datasets: [{
-            label: 'Energy Balance',
             data: [
               todayProd["polycristallin_est_5_ond1"],
               todayProd["polycristallin_est_5_ond2"],
@@ -245,11 +249,25 @@ $(document).ready(function () {
             hoverOffset: 4
           }]
         };
-        var todayCtx = document.getElementById('today-details').getContext('2d');
-        let todayChart = new Chart(todayCtx, {
-            type: 'doughnut',
-            data: todayData
-        });
+        let noZero = false;
+        for(value of todayData.datasets[0].data) {
+            if(value > 0) {
+                noZero = true;
+            }
+        }
+        let nodataDiv = document.getElementById('today-nodata');
+        let todayDetails = document.getElementById('today-details');
+        if(noZero) {
+            $(nodataDiv).hide();
+            let ctx = todayDetails.getContext('2d');
+            let todayChart = new Chart(ctx, {
+                type: 'doughnut',
+                data: todayData
+            });
+        } else {
+            $(todayDetails).hide();
+            nodataDiv.innerHTML = "No production data";
+        }
         // Display the yesterday doughnut
         const yesterdayData = {
           labels: [
@@ -269,7 +287,6 @@ $(document).ready(function () {
               "tracker_solaire_ond14"
           ],
           datasets: [{
-            label: 'Energy Balance',
             data: [
               yesterdayProd["polycristallin_est_5_ond1"],
               yesterdayProd["polycristallin_est_5_ond2"],
@@ -305,11 +322,25 @@ $(document).ready(function () {
             hoverOffset: 4
           }]
         };
-        var ctx = document.getElementById('yesterday-details').getContext('2d');
-        let prodChart = new Chart(ctx, {
-            type: 'doughnut',
-            data: yesterdayData
-        });
+        noZero = false;
+        for(value of yesterdayData.datasets[0].data) {
+            if(value > 0) {
+                noZero = true;
+            }
+        }
+        nodataDiv = document.getElementById('yesterday-nodata');
+        let yesterdayDetails = document.getElementById('yesterday-details');
+        if(noZero) {
+            $(nodataDiv).hide();
+            ctx = document.getElementById('yesterday-details').getContext('2d');
+            let prodChart = new Chart(ctx, {
+                type: 'doughnut',
+                data: yesterdayData
+            });
+        } else {
+            $(yesterdayDetails).hide();
+            nodataDiv.innerHTML = "No production data";
+        }
 
         // Draw the graph of 'Yesterday Production (last 48h)' section
         let prodValues = {};
@@ -337,7 +368,7 @@ $(document).ready(function () {
                 prodValues[name].push(value.mean)
             }
         }
-        var ctx = document.getElementById('production-line').getContext('2d');
+        ctx = document.getElementById('production-line').getContext('2d');
         let lineChart = new Chart(ctx, {
             type: 'line',
             data: lineData 

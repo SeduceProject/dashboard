@@ -171,6 +171,11 @@ body {
     background: white;
 }
 
+.production .nodata {
+    font-size: 18px;
+    margin-top: 235px;
+}
+
 .production .line-block {
     width: 1108px;
     margin: auto;

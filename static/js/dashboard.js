@@ -11,7 +11,7 @@ $(document).ready(function () {
 	  labels: [
 		'Servers',
 		'Cooling',
-		'Solar'
+		'Solar (remaining power)'
 	  ],
 	  datasets: [{
 		label: 'Energy Balance',
