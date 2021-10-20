@@ -236,3 +236,22 @@ body {
     width: 325px;
     height: 30px;
 }
+
+/** password page ***/
+.password {
+    width: 1000px;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    background: white;
+}
+
+.password .row {
+    margin-top: 10px;
+}
+
+.password .btn {
+    margin: auto;
+    margin-top: 10px;
+}
+

@@ -8,18 +8,6 @@ import flask, logging
 b_admin = flask.Blueprint("admin", __name__, template_folder="templates/")
 
 
-@b_admin.route("/users")
-@login_required
-def users():
-    admins = []
-    db = open_session()
-    for user in db.query(User).all():
-        admins.append(user.email)
-    close_session(db)
-    return flask.render_template("users.html", active_btn = "user",
-        is_anonymous = current_user.is_anonymous, existing = admins)
-
-
 @b_admin.route("/add-admin", methods=[ "POST" ])
 @login_required
 def add_admin():
@@ -57,13 +45,6 @@ def del_admin():
     return flask.redirect("/users")
 
 
-@b_admin.route("/password")
-@login_required
-def password():
-    return flask.render_template("password.html", active_btn = "password",
-        is_anonymous = current_user.is_anonymous)
-
-
 @b_admin.route("/update-pwd", methods=[ "POST" ])
 @login_required
 def update_pwd():
@@ -85,3 +66,22 @@ def update_pwd():
         return flask.redirect("/dashboard")
     else:
         return flask.redirect("/password")
+
+
+@b_admin.route("/users")
+@login_required
+def users():
+    admins = []
+    db = open_session()
+    for user in db.query(User).all():
+        admins.append(user.email)
+    close_session(db)
+    return flask.render_template("users.html", active_btn = "user",
+        is_anonymous = current_user.is_anonymous, existing = admins)
+
+
+@b_admin.route("/password")
+@login_required
+def password():
+    return flask.render_template("password.html", active_btn = "password",
+        is_anonymous = current_user.is_anonymous)
