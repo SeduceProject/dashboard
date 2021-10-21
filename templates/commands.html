@@ -1,0 +1,109 @@
+{% extends "base.html" %}
+{% block other_js %}
+{% endblock %}
+{% block content %}
+<div class="commands">
+    <center><h4>Solar Panel Management</h4></center>
+    {% for device in modbus %}
+        {% if "status" in modbus[device] %}
+            {% set status = modbus[device].pop("status") %}
+        {% else %}
+            {% set status = "undefined" %}
+        {% endif %}
+        {% if "actions" in modbus[device] %}
+            {% set actions = modbus[device].pop("actions") %}
+        {% else %}
+            {% set actions = [] %}
+        {% endif %}
+        <div class="container text-center">
+            <div class="row title">
+                <div class="col">
+                    {{ device.upper() }}
+                </div>
+                {% if status != "undefined" %}
+                    {% if status.value %}
+                        <div class="col">
+                                <div class="status bg-success">ON</div>
+                        </div>
+                    {% else %}
+                        <div class="col">
+                                <div class="status bg-secondary">OFF</div>
+                        </div>
+                    {% endif %}
+                {% endif %}
+            </div><!-- row -->
+            <div class="row legend">
+                <div class="col">
+                    Property Name 
+                </div>
+                <div class="col">
+                    Current value
+                </div>
+                <div class="col">
+                    Default value
+                </div>
+            </div><!-- row -->
+            {% for prop in modbus[device] %}
+                <div class="row">
+                    {% if modbus[device][prop]["value"] == modbus[device][prop]["default_value"] %}
+                        <div class="col">
+                    {% else %}
+                        <div class="col bg-warning">
+                    {% endif %}
+                        {{ prop }}
+                    </div>
+                    <div class="col">
+                        {% if prop == "mode" %}
+                            {% if modbus[device]["mode"]["value"] == 0 %}
+                                0 (undefined)
+                            {% elif modbus[device]["mode"]["value"] == 1 %}
+                                1 (injection_pv)
+                            {% elif modbus[device]["mode"]["value"] == 2 %}
+                                2 (self_consumption_without_ess)
+                            {% elif modbus[device]["mode"]["value"] == 3 %}
+                                3 (self_consumption_with_ess)
+                            {% elif modbus[device]["mode"]["value"] == 4 %}
+                                4 (self_consumption_with_ess_overage_injection)
+                            {% endif %}
+                        {% else %}
+                            {{ modbus[device][prop]["value"] }}
+                        {% endif %}
+                    </div>
+                    <div class="col">
+                        {% if prop == "mode" %}
+                            {% if modbus[device]["mode"]["default_value"] == 0 %}
+                                0 (undefined)
+                            {% elif modbus[device]["mode"]["default_value"] == 1 %}
+                                1 (injection_pv)
+                            {% elif modbus[device]["mode"]["default_value"] == 2 %}
+                                2 (self_consumption_without_ess)
+                            {% elif modbus[device]["mode"]["default_value"] == 3 %}
+                                3 (self_consumption_with_ess)
+                            {% elif modbus[device]["mode"]["default_value"] == 4 %}
+                                4 (self_consumption_with_ess_overage_injection)
+                            {% endif %}
+                        {% else %}
+                            {{ modbus[device][prop]["default_value"] }}
+                        {% endif %}
+                    </div>
+                </div><!-- row -->
+            {% endfor %}
+            {% if actions|length > 0 %}
+                <div class="row">
+                    <div class="col legend">
+                        Actions
+                    </div>
+                </div><!-- row -->
+                <div class="row">
+                    <div class="col actions">
+                        {% for action in actions %}
+                            <a href="/commands/{{device}}/{{action}}" class="btn btn-info">{{action}}</a>
+                        {% endfor %}
+                    </div>
+                </div><!-- row -->
+            {% endif %}
+        </div>
+    {% endfor %}
+    </div><!-- end container -->
+</div><!-- commands -->
+{% endblock %}

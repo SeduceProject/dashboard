@@ -255,3 +255,39 @@ body {
     margin-top: 10px;
 }
 
+/** PV commands page ***/
+.commands {
+    width: 1000px;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    background: white;
+}
+
+.commands .container {
+    width: 800px;
+}
+
+.commands .title {
+    height: 40px;
+    line-height: 40px;
+    font-weight: bold;
+    background: #eee;
+}
+
+.commands .status {
+    width: 100px;
+    margin: auto;
+}
+
+.commands .legend {
+    font-weight: bold;
+}
+
+.commands .actions {
+    margin-bottom: 20px;
+}
+
+.commands .actions .btn {
+    width: 200px;
+}
