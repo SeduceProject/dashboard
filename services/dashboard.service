@@ -6,7 +6,9 @@ Type=simple
 User=root
 Group=root
 WorkingDirectory=/root/dashboard
-ExecStart=/usr/bin/python3 dashboard.py 
+# Take care of using at least python3.7 otherwise the order of the dictionnaries
+# are not guaranteed. The dict order affects the order of the sensors are displayed
+ExecStart=/usr/local/bin/python3.7 dashboard.py
 Restart=on-failure
  
 [Install]
