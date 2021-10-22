@@ -360,6 +360,14 @@ modbus_actions = {
         "deactivate": {
             "address": 3110,
             "value": 0
+        },
+        "use_injection": {
+            "address": 3111,
+            "value": 1
+        },
+        "use_selfconsumption": {
+            "address": 3111,
+            "value": 2
         }
     },
     "network2" : {
@@ -370,6 +378,14 @@ modbus_actions = {
         "deactivate": {
             "address": 3120,
             "value": 0
+        },
+        "use_injection": {
+            "address": 3121,
+            "value": 1
+        },
+        "use_selfconsumption": {
+            "address": 3121,
+            "value": 2
         }
     },
     "network3" : {
@@ -380,6 +396,14 @@ modbus_actions = {
         "deactivate": {
             "address": 3130,
             "value": 0
+        },
+        "use_injection": {
+            "address": 3131,
+            "value": 1
+        },
+        "use_selfconsumption": {
+            "address": 3131,
+            "value": 2
         }
     },
     "network4" : {
@@ -390,6 +414,14 @@ modbus_actions = {
         "deactivate": {
             "address": 3140,
             "value": 0
+        },
+        "use_injection": {
+            "address": 3141,
+            "value": 1
+        },
+        "use_selfconsumption": {
+            "address": 3141,
+            "value": 2
         }
     },
     "network5" : {
@@ -400,6 +432,14 @@ modbus_actions = {
         "deactivate": {
             "address": 3150,
             "value": 0
+        },
+        "use_injection": {
+            "address": 3151,
+            "value": 1
+        },
+        "use_selfconsumption": {
+            "address": 3151,
+            "value": 2
         }
     },
     "network6" : {
@@ -410,6 +450,14 @@ modbus_actions = {
         "deactivate": {
             "address": 3160,
             "value": 0
+        },
+        "use_injection": {
+            "address": 3161,
+            "value": 1
+        },
+        "use_selfconsumption": {
+            "address": 3161,
+            "value": 2
         }
     },
     "network7" : {
@@ -420,6 +468,14 @@ modbus_actions = {
         "deactivate": {
             "address": 3170,
             "value": 0
+        },
+        "use_injection": {
+            "address": 3171,
+            "value": 1
+        },
+        "use_selfconsumption": {
+            "address": 3171,
+            "value": 2
         }
     },
     "network8" : {
@@ -430,6 +486,14 @@ modbus_actions = {
         "deactivate": {
             "address": 3180,
             "value": 0
+        },
+        "use_injection": {
+            "address": 3181,
+            "value": 1
+        },
+        "use_selfconsumption": {
+            "address": 3181,
+            "value": 2
         }
     },
     "overall" : {
