@@ -86,9 +86,11 @@ $(document).ready(function () {
                 row.append("<div id='" + server.name + "-last' class='col'>-</div>");
             }
         }
+        // Load the last temperature and power values 
+        updateTable();
+        // Update the temperature and the power values every 10s
+        setInterval(updateTable, 10000);
     });
-    updateTable();
-    setInterval(updateTable, 10000);
 });
 
 function updateTable() {
